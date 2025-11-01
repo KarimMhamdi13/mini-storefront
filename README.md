@@ -4,14 +4,14 @@ Setup:
 cd mini-storefront
 npm intsall
 npm run dev
-3. Visit "http://localhost:3000" on your browser of choice ot visit the storefront page
+3. Visit "http://localhost:3000" on your browser of choice to visit the storefront page
 
 Rubric Checklist:
-Project Setup & Structure: The file was properly initializedrequired files and file structure is present and functioning.
+Project Setup & Structure: The file was properly initialized & required files and file structure is present and functioning.
 
 Components + JSX + Keys: All components utilize proper JSX structure and begin with "use client" when required
 
-Props + Lifting State: Dat flows from parent to child through props, while child communicates with parents through callbacks.
+Props + Lifting State: Data flows from parent to child through props, while children communicate with parents through callbacks.
 
 State + Controlled Inputs: useState manages filters and products, while controlled inputs manage categories and price filters.
 
