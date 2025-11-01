@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
+Setup:
+1. Clone or download the mini-storefront repository
+2. Inside your terminal run:
+cd mini-storefront
+npm intsall
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3. Visit "http://localhost:3000" on your browser of choice ot visit the storefront page
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rubric Checklist:
+Project Setup & Structure: The file was properly initializedrequired files and file structure is present and functioning.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Components + JSX + Keys: All components utilize proper JSX structure and begin with "use client" when required
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Props + Lifting State: Dat flows from parent to child through props, while child communicates with parents through callbacks.
 
-## Learn More
+State + Controlled Inputs: useState manages filters and products, while controlled inputs manage categories and price filters.
 
-To learn more about Next.js, take a look at the following resources:
+Effects + Cleanup: Product data fetched from API route, provides simulated inventory changes, and clears intervals upon closing.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+UX + Conditional Rendering: Displays proper UI for loading and errors.
