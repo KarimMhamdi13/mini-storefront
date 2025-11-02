@@ -1,10 +1,12 @@
 Setup:
 1. Clone or download the mini-storefront repository
-2. Inside your terminal run:
+2. If downloaded from Github, extract the zip file into a folder
+3. Move file to C:\Users\yourname
+4. Inside your terminal run:
 cd mini-storefront
 npm intsall
 npm run dev
-3. Visit "http://localhost:3000" on your browser of choice to visit the storefront page
+5. Visit "http://localhost:3000" on your browser of choice to visit the storefront page
 
 Rubric Checklist:
 Project Setup & Structure: The file was properly initialized & required files and file structure is present and functioning.
