@@ -5,13 +5,13 @@ import CategoryFilter from './CategoryFilter';
 import PriceFilter from './PriceFilter';
 import CartSummary from './CartSummary';
 import StatusMessage from './StatusMessage';
+import SalesChart from './SalesChart';
 
-export default function Catalog() {
+export default function Catalog({ cart, setCart }) {
   const [products, setProducts] = useState([]);
   const [status, setStatus] = useState({ loading: true, error: null });
   const [category, setCategory] = useState('All');
   const [maxPrice, setMaxPrice] = useState('');
-  const [cart, setCart] = useState({}); // { productId: quantity }
   const intervalRef = useRef(null);
   const mountedRef = useRef(true);
 
@@ -109,6 +109,18 @@ export default function Catalog() {
   }
 
   const categories = ['All', ...Array.from(new Set(products.map(p => p.category)))];
+
+  // Transform cart object into an array of items with product metadata for the chart
+  const cartItems = Object.entries(cart).map(([id, quantity]) => {
+    const product = products.find(p => p.id === id);
+    return {
+      id,
+      name: product?.name || 'Unknown',
+      category: product?.category || 'Uncategorized',
+      price: product?.price || 0,
+      quantity
+    };
+  });
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

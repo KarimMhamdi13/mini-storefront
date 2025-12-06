@@ -3,8 +3,11 @@ Setup:
 2. If downloaded from Github, extract the zip file into a folder
 3. Move file to C:\Users\yourname
 4. Inside your terminal run:
-cd mini-storefront
-npm intsall
+
+cd mini-storefront-master
+
+npm install
+
 npm run dev
 5. Visit "http://localhost:3000" on your browser of choice to visit the storefront page
 
